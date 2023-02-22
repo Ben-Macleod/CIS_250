@@ -1,6 +1,10 @@
 {
-  "files.associations": {
-    "initializer_list": "cpp",
-    "ostream": "cpp"
-  }
+	"files.associations": {
+		"initializer_list": "cpp",
+		"ostream": "cpp",
+		"__locale": "cpp",
+		"string": "cpp",
+		"string_view": "cpp",
+		"iostream": "cpp"
+	}
 }

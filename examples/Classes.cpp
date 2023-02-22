@@ -7,26 +7,29 @@ using namespace std;
 
 class Player 
 {
-    // Attributes can only be accessed within the class.
+    // Private Attributes
     private:
-        string name;
         int health;
         int level;
+        float xpModifier;
+        string name;
 
-    // Method can be accessed outside of the class.
+
+    // Public Attributes
     public:
-        // Contructor, shares same name as class & entry point.
+        /* Constructors */
         Player();
-
-        // Overloaded constructor to set varibles.
         Player(int,string,int);
     
+        /* Setters */
         void setHealth(int);
         void setName(string);
         void setLevel(int);
+        void setXPModifier(float);
 
-        // const blocks the method from changing any values.
+        /* Getters */
         int getHealth() const;
+        float getXPModifier() const;
         string getName() const;
         int getLevel() const;
 
@@ -75,6 +78,16 @@ void Player::setLevel(int l)
 int Player::getLevel() const
 {
     return Player::level;
+}
+
+void Player::setXPModifier(float v)
+{
+    xpModifier = v;
+}
+
+float Player::getXPModifier() const
+{
+    return xpModifier;
 }
 
 int main()
